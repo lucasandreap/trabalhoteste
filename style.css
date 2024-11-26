@@ -1,19 +1,48 @@
+/*Aqui nós aplicamos no root a fonte que está la no html. Ao usar :root, você está definindo a fonte padrão para todo o documento. Isso acontece porque :root refere-se ao elemento <html> no CSS, e qualquer regra aplicada a ele afetará todos os elementos dentro do HTML.*/
+:root{
+    font-family: "Alice", serif;
+    /*Line-height é para definir a altura de linha*/
+    line-height: 150%;
+    color: #672083;
+}
+
+/*Aqui o body pega a página toda*/
 body{
     background-image: url(assets/bgimage.jpg);
     background-size: cover;
     
 }
 
+/*Aqui o page pega somente a div #page*/
 #page{
+    /*box-sizing border box mantém o padding*/
     box-sizing: border-box;
     width: 800px;
+    /*padding aumenta o espaço dentro do elemento, empurrando o conteúdo (como texto ou imagem) para longe da borda.*/
     padding: 24px;
     background-color: rgba(212, 186, 236, 0.397);
     border-radius: 24px;
+
+    /*Margin cria distância entre uns elementos e outros ao seu redor*/
     margin: 48px auto;
 }
 
-
+/*Aqui mexemos somente na imagem*/
 img{
-    border-radius: 16px;
+    border-radius: 20px;
+    
+}
+
+h1{
+    line-height: 140%;
+    /*font-size é o tamanho da letra*/
+    font-size: 40px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1 h2{
+    color: #3f034e;
 }

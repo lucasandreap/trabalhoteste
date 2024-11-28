@@ -21,10 +21,10 @@ body{
     /*padding aumenta o espaço dentro do elemento, empurrando o conteúdo (como texto ou imagem) para longe da borda.*/
     padding: 24px;
     background-color: rgba(255, 255, 255, 0.041);
-    border-radius: 24px;
+    border-radius: 12px;
 
     /*Margin cria distância entre uns elementos e outros ao seu redor*/
-    margin: 48px auto;
+    margin: 24px auto;
 }
 
 /*Aqui mexemos somente na imagem*/
@@ -55,4 +55,38 @@ h2{
 
 h1 h2{
     color: #ffffffb9;
+}
+
+#titulo nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px;
+    background-color: rgb(0,0,0);
+    border-radius: 12px;
+}
+
+#titulo nav p {
+    margin: 0;  /* Remove qualquer margem por padrão */
+    color: white;  /* Cor do texto */
+    cursor: pointer;  /* Altera o cursor para indicar que é clicável */
+    transition: color 0.3s ease;  /* Adiciona um efeito de transição na cor */
+}
+
+#titulo{
+    position: absolute;  /* Fixa no topo */
+    top: 0;  /* cabeçalho no topo da página */
+    left: 0;  /* alinhado a esquerda */
+    width: 100%;  /* Faz com que o cabeçalho ocupe toda a largura da página */
+    z-index: 1000;  /* Garante que o cabeçalho fique acima de outros elementos */
+    border-radius: 0 0 12px 12px;  /* Bordas arredondadas apenas na parte inferior */
+    padding: 0 0 24px   ;
+}
+
+#inicio nav{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 24px;
+    padding: 12px;
 }

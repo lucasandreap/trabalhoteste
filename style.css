@@ -1,3 +1,9 @@
+/*Aqui nós pegamos toda a página com o * e tiramos o margin e o padding*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
 /*Aqui nós aplicamos no root a fonte que está la no html. Ao usar :root, você está definindo a fonte padrão para todo o documento. Isso acontece porque :root refere-se ao elemento <html> no CSS, e qualquer regra aplicada a ele afetará todos os elementos dentro do HTML.*/
 :root{
     font-family: "Montserrat", sans-serif;
@@ -34,27 +40,41 @@ img{
     height: auto;
     display: block;
     opacity: 0.4;
-    
 }
 
 main{
     padding: 24px;
-
 }
+
+section + section {
+    margin-top: 24px;
+}
+
+#abaout p + p{
+margin-top: 12px;
+}
+
 
 h1{
     line-height: 140%;
     /*font-size é o tamanho da letra*/
     font-size: 40px;
     text-align: center;
+    margin-bottom: 18px;
 }
 
 h2{
     font-size: 24px;
+    margin-bottom: 24px;
 }
 
 h1 h2{
     color: #ffffffb9;
+    line-height: 150%;
+}
+
+ul{
+    padding-left: 12px;
 }
 
 #titulo nav{
